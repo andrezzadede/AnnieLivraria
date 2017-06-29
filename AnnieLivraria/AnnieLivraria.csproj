@@ -45,14 +45,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Camadas\BLL\Cliente.cs" />
+    <Compile Include="Camadas\BLL\Compra.cs" />
+    <Compile Include="Camadas\BLL\Livro.cs" />
+    <Compile Include="Camadas\DAL\Cliente.cs" />
+    <Compile Include="Camadas\DAL\Compra.cs" />
+    <Compile Include="Camadas\DAL\Conexao.cs" />
+    <Compile Include="Camadas\DAL\Livro.cs" />
+    <Compile Include="Camadas\Model\Cliente.cs" />
+    <Compile Include="Camadas\Model\Compra.cs" />
+    <Compile Include="Camadas\Model\Livro.cs" />
+    <Compile Include="Compra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCliente.Designer.cs">
+      <DependentUpon>formCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLivro.Designer.cs">
+      <DependentUpon>FrmLivro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCliente.resx">
+      <DependentUpon>formCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLivro.resx">
+      <DependentUpon>FrmLivro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -74,6 +115,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Imagem\Books-HD-Wallpaper-pictures-hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\wallpaper-books1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

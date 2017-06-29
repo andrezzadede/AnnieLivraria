@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AnnieLivraria
 {
-    public partial class Form1 : Form
+    public partial class Compra : Form
     {
-        public Form1()
+        public Compra()
         {
             InitializeComponent();
         }
